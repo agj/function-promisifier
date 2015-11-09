@@ -1,0 +1,24 @@
+{
+  "name": "function-promisifier",
+  "version": "0.0.1",
+  "description": "Takes a regular sync function, returns a fully promisified one.",
+  "main": "function-promisifier.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "promise"
+  ],
+  "author": "agj",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.2.2",
+    "tape-catch": "^1.0.4"
+  },
+  "dependencies": {
+    "ramda": "^0.18.0"
+  }
+}
