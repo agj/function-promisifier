@@ -7,18 +7,26 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/ && browserify test/ | tape-run"
   },
   "keywords": [
+    "promises",
     "promise"
   ],
   "author": "agj",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^12.0.1",
+    "pinkie-promise": "^2.0.0",
     "tape": "^4.2.2",
-    "tape-catch": "^1.0.4"
+    "tape-catch": "^1.0.4",
+    "tape-run": "^2.1.0"
   },
   "dependencies": {
     "ramda": "^0.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agj/function-promisifier.git"
   }
 }

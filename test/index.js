@@ -1,7 +1,9 @@
 'use strict';
 
-var promisifier = require('../function-promisifier');
+var promisifier = require('../');
 var test = require('tape-catch');
+
+global.Promise = require('pinkie-promise');
 
 function add(a, b) {
 	return a + b;
