@@ -14,6 +14,7 @@ var promisifierN = function (arity, fn) {
 var promisifier = function (fn) {
 	return promisifierN(fn.length, fn);
 }
+promisifier.n = promisifierN;
 
 
 module.exports = promisifier;
