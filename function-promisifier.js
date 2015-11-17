@@ -1,12 +1,13 @@
 'use strict';
 
-var R = require('ramda');
+var nAry = require('ramda/src/nAry');
+var apply = require('ramda/src/apply');
 var toArray = Function.prototype.call.bind([].slice);
 
 var promisifierN = function (arity, fn) {
-	return R.nAry(arity, function () {
+	return nAry(arity, function () {
 		return Promise.all(toArray(arguments))
-			.then(R.apply(fn.bind(this)));
+			.then(apply(fn.bind(this)));
 	});
 }
 
