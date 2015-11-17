@@ -1,6 +1,6 @@
 {
   "name": "function-promisifier",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Takes a regular sync function, returns a fully promisified one.",
   "main": "function-promisifier.js",
   "directories": {
